@@ -45,6 +45,7 @@ Create a `.env` file in the root directory and fill in your OpenAI and Telegram 
 ASSISTANT_ID=your-assistant-id
 CLIENT_API_KEY=your-openai-api-key
 TELEGRAM_TOKEN=your-telegram-bot-token
+ALLOWED_USERS=256796965,123456789
 ```
 
 ## Usage
