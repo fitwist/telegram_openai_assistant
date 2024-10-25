@@ -64,6 +64,7 @@ async def update_knowledge(update, context):
         headers = {
             "Authorization": f"Bearer {os.getenv('CLIENT_API_KEY')}",  # Замените на ваш ключ API
             "Content-Type": "application/json",
+            "OpenAI-Beta": "assistants=v2"
         }
         # Подготовьте данные в формате, который ожидает OpenAI API
         data = message_text
