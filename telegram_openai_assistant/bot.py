@@ -67,7 +67,13 @@ async def update_knowledge(update, context):
             "OpenAI-Beta": "assistants=v2"
         }
         # Подготовьте данные в формате, который ожидает OpenAI API
-        data = message_text
+        data = {
+            "metadata": {
+                "author": "kapatsahelen",
+                "message": str(update.message.date)   
+            }
+        }
+
         response = requests.post(url, headers=headers, json=data)
 
     if response.status_code == 200:
