@@ -62,7 +62,7 @@ async def update_knowledge(update, context):
     with open("custom_knowledge_file.txt", "rb") as file:
         url = "https://api.openai.com/v1/vector_stores/vs_aZl8dFZFiDX01UOZfJTvKzHk"
         headers = {
-            "Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}",  # Замените на ваш ключ API
+            "Authorization": f"Bearer {os.getenv('CLIENT_API_KEY')}",  # Замените на ваш ключ API
             "Content-Type": "application/json",
         }
         # Подготовьте данные в формате, который ожидает OpenAI API
