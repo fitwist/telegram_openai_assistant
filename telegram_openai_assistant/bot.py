@@ -53,6 +53,10 @@ async def update_knowledge(update, context):
     if not message_text:
         await update.message.reply_text("Пожалуйста, укажите текст для сохранения:\n/add Факт")
         return
+
+    # Записываем текст в файл
+    with open("custom_knowledge_file.txt", "a") as file:
+        file.write(message_text + "\n")
     
     # Отправка файла на OpenAI Assistants API 
     with open("custom_knowledge_file.txt", "rb") as file:
