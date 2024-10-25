@@ -56,6 +56,13 @@ To start the bot, run the following command in your terminal:
 chatbot
 ```
 
+## VNC server access
+
+— Скачиваем console.vv c [панели Hostkey](https://invapi.hostkey.ru/?id=98457&auth=true)
+```bash
+remote-viewer /Users/fitwist/Downloads/console.vv
+```
+
 The bot should now be running and can be interacted with through your Telegram bot interface.
 
 ## Launching the Telegram Bot Client on DeepSquare
