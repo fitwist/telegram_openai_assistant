@@ -9,6 +9,9 @@ setup(
         'openai',
         'python-dotenv',
         # Add other dependencies here
+        'gspread', 
+        'requests',
+        'oauth2client'
     ],
     entry_points={
         'console_scripts': [

@@ -1,4 +1,4 @@
-env
 __pycache__
 .env
 venv/
+gcloud-credentials.json
