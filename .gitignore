@@ -2,3 +2,5 @@ __pycache__
 .env
 venv/
 gcloud-credentials.json
+questions_answers.json
+message_count.json
