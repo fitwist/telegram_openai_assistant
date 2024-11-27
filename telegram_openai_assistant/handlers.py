@@ -1,6 +1,4 @@
-# handlers.py
 import time
-# import datetime
 from telegram.ext import CallbackContext
 from telegram import Update
 from openai import OpenAI
@@ -8,7 +6,6 @@ from dotenv import load_dotenv
 import os
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-# from datetime import datetime
 import arrow
 
 from .config import assistant_id, client_api_key
@@ -49,9 +46,14 @@ def get_answer(message_str) -> None:
         thread_id=thread.id, role="user", content=message_str
     )
 
-    run = client.beta.datetime.now.runs.create(
+    # run = client.beta.datetime.now.runs.create(
+    #     thread_id=thread.id,
+    #     assistant_id=assistant_id,
+    # )
+
+    run = client.beta.threads.runs.create(
         thread_id=thread.id,
-        assistant_id=assistant_id,
+        assistant_id=assistant_id
     )
 
     while True:

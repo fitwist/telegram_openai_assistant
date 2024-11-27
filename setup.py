@@ -10,7 +10,8 @@ setup(
         'python-dotenv==1.0.1',
         'gspread==6.1.4', 
         'requests==2.32.3',
-        'oauth2client==4.1.3'
+        'oauth2client==4.1.3',
+        'arrow==1.3.0'
     ],
     entry_points={
         'console_scripts': [
