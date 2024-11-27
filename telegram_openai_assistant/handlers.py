@@ -90,8 +90,8 @@ async def process_message(update: Update, context: CallbackContext) -> None:
         return
     else:
         question = update.message.text
-        # answer = get_answer(update.message.text)
-        answer = 'Привет'
+        answer = get_answer(update.message.text)
+        # answer = 'Привет'
         
         await context.bot.send_message(chat_id=update.effective_chat.id, text=answer)
     
